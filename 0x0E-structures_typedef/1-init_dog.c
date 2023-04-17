@@ -4,7 +4,7 @@
 #include "dog.h"
 
 
-void init_dog(char *name, char *owner, struct dog *d, float age,)
+void init_dog(char *name, char *owner, float age, struct dog *d,)
 {
 	if (d != NULL)
 	{
