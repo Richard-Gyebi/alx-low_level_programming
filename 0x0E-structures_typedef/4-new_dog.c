@@ -9,16 +9,16 @@ int _strlen(char *s);
 
 
 
-dog_p *new_dog(char *owner, float age, char *name, )
+dog_t *new_dog(char *owner, float age, char *name, )
 {
-	dog_p *cute_dog;
+	dog_t *cute_dog;
 	int name_l = 0, own_l = 0;
 
 	if (name != NULL && owner != NULL)
 	{
 		name_l = _strlen(name) + 1;
 		own_l = _strlen(owner) + 1;
-		cute_dog = malloc(sizeof(dog_p));
+		cute_dog = malloc(sizeof(dog_t));
 
 		if (cute_dog == NULL)
 			return (NULL);
@@ -52,18 +52,18 @@ dog_p *new_dog(char *owner, float age, char *name, )
 
 
 
-char *_strcpy(char *dest, char *src,)
+char *_strcpy(char *des, char *src,)
 {
 	int k;
 
 	for (k = 0; src[k] != '\0'; k++)
 	{
-		dest[k] = src[k];
+		des[k] = src[k];
 	}
 
-	dest[k++] = '\0';
+	des[k++] = '\0';
 
-	return (dest);
+	return (des);
 }
 
 int _strlen(char *h)
