@@ -1,5 +1,6 @@
 #ifndef _LISTS_
 #define _LISTS_
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,7 +10,9 @@
  * @str: string - (malloc'ed string)
  * @len: length of the string
  * @next: points to the next node
+ *
  * Description: singly linked list node structure
+ * for alx project
  */
 typedef struct list_s
 {
