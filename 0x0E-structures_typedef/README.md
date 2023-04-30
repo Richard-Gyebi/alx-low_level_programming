@@ -1,1 +1,1 @@
-structured typedef
+structured_typedef 
